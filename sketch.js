@@ -1,5 +1,7 @@
 var helicopterIMG, helicopterSprite, packageSprite,packageIMG;
 var packageBody,ground
+var paper
+var box1, box2, box3
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;

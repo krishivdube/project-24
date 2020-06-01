@@ -38,15 +38,17 @@ World.add(world,box3)
 
 
 	Engine.run(engine);
-	Engine.update(engine);
-  
+
 }
 
 
 function draw() {
-
+	Engine.update(engine);
+  
   rectMode(CENTER);
-
+rect(box1.position.x,box1.position.y,200,20)
+	rect(box2.position.x,box2.position.y,20,100)
+	rect(box3.position.x,box3.position.y,20,100)
 
  paper.display();
   background(0);

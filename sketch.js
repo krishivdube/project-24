@@ -14,20 +14,20 @@ function preload()
 
 function setup() {
 	createCanvas(800, 700);
+	engine = Engine.create();
+	world = engine.world;
+	
 	paper = new Paper(width/2,200,20,20);
 
 	box1=Bodies.rectangle(width/2,660,200,20,{isStatic:true});
 box2=Bodies.rectangle(300,620,20,100,{isStatic:true})
 box3=Bodies.rectangle(500,620,20,100,{isStatic:true})
+World.add(world,box1)
+World.add(world,box2)
+World.add(world,box3)
 
 
-
-	engine = Engine.create();
-	world = engine.world;
-	world = engine.world;
-	world = engine.world;
-	world = engine.world;
-
+	
 	//packageBody = Bodies.circle(width/2 , 200 , 5 , {restitution:1.5, isStatic:false});
 	//World.add(world, packageBody);
 	
